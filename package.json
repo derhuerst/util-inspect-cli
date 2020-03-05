@@ -1,0 +1,35 @@
+{
+	"name": "util-inspect-cli",
+	"description": "Use Node's util.inspect from the command line.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"cli.js"
+	],
+	"bin": {
+		"util-inspect": "./cli.js"
+	},
+	"keywords": [
+		"util",
+		"inspect",
+		"console",
+		"cli"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/util-inspect-cli",
+	"repository": "derhuerst/util-inspect-cli",
+	"bugs": "https://github.com/derhuerst/util-inspect-cli/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=10"
+	},
+	"dependencies": {
+		"mri": "^1.1.4"
+	},
+	"devDependencies": {
+	},
+	"scripts": {
+		"test": "node test.js",
+		"prepublishOnly": "npm test"
+	}
+}
