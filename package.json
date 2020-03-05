@@ -24,7 +24,8 @@
 		"node": ">=10"
 	},
 	"dependencies": {
-		"mri": "^1.1.4"
+		"mri": "^1.1.4",
+		"supports-color": "^7.1.0"
 	},
 	"devDependencies": {
 	},
