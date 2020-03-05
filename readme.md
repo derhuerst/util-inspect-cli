@@ -19,8 +19,26 @@ npm install util-inspect-cli
 
 ## Usage
 
-```shell
-todo
+```
+Usage:
+    util-inspect [options]
+Options:
+    see also https://nodejs.org/docs/latest-v10.x/api/util.html#util_util_inspect_object_showhidden_depth_colors
+    --depth             -d  Number of nested levels to inspect. Pass
+                            `Infinity` for infinite depth. Default: 2
+    --max-array-length  -a  Number of array elements to inspect.
+                            Pass `Infinity` to show all. Default: 100
+    --sorted            -s  Sort keys using Array.prototype.sort().
+    --color             -c  Inspect with colors? Default: based on
+                            terminal support
+    --spacious              Don't use a compact layout.
+Note:
+    To select sub-trees of a JSON tree, use jq.
+    https://stedolan.github.io/jq/
+Examples:
+    echo '{"foo": [{"bar": [1]}]}' | util-inspect --color
+    echo '[[1, 2, 3, 4, 5]]' | jq '.[0]' | util-inspect -a Infinity
+    echo '{"foo": 1, "_foo": 2}' | util-inspect --sorted
 ```
 
 
