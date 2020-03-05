@@ -28,6 +28,8 @@
 		"supports-color": "^7.1.0"
 	},
 	"devDependencies": {
+		"any-shell-escape": "^0.1.1",
+		"execa": "^4.0.0"
 	},
 	"scripts": {
 		"test": "node test.js",
